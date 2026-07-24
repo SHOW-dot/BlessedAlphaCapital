@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Blessed Alpha Capital is a strategic holding company focused on building and scaling businesses with long-term growth potential."
+  >
+
+  <title>Blessed Alpha Capital</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ==================================================
+       HEADER
+  =================================================== -->
+
+  <header class="site-header">
+    <div class="container header-container">
+
+      <a href="#home" class="brand" aria-label="Blessed Alpha Capital home">
+        <span class="brand-mark">
+          <img
+            src="assets/logo2.png"
+            alt="Blessed Alpha Capital logo"
+            class="brand-logo"
+          >
+        </span>
+
+        <span class="brand-copy">
+          <strong>Blessed Alpha Capital</strong>
+        </span>
+      </a>
+
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+      >
+
+      <label for="menu-toggle" class="menu-button" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#companies">Companies</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#contact" class="nav-cta">
+          Contact
+          <span>↗</span>
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================================================
+         HERO
+    =================================================== -->
+
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-light hero-light-one" aria-hidden="true"></div>
+      <div class="hero-light hero-light-two" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Strategic Holding Company
+          </div>
+
+          <h1>
+            Building companies.
+            <span>Creating lasting value.</span>
+          </h1>
+
+          <p>
+            Blessed Alpha Capital is a strategic holding company that builds,
+            supports, and scales businesses with strong long-term growth
+            potential.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#companies" class="button button-primary">
+              Explore Our Companies
+              <span>↗</span>
+            </a>
+
+            <a href="#about" class="button button-secondary">
+              Discover Our Vision
+              <span>↓</span>
+            </a>
+          </div>
+
+          <div class="hero-summary">
+            <div class="summary-item">
+              <strong>03</strong>
+              <span>Portfolio companies</span>
+            </div>
+
+            <div class="summary-line"></div>
+
+            <div class="summary-item">
+              <strong>01</strong>
+              <span>Integrated vision</span>
+            </div>
+
+            <div class="summary-line"></div>
+
+            <div class="summary-item">
+              <strong>∞</strong>
+              <span>Long-term perspective</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================
+             HOLDING STRUCTURE VISUAL
+        =================================================== -->
+
+        <div class="hero-visual">
+          <div class="visual-frame">
+
+            <div class="visual-label">
+              <span>Holding Structure</span>
+              <span>2026</span>
+            </div>
+
+            <div class="network">
+
+              <!-- Decorative rings -->
+              <div class="network-ring network-ring-one"></div>
+              <div class="network-ring network-ring-two"></div>
+              <div class="network-ring network-ring-three"></div>
+
+              <!--
+                SVG connection lines.
+
+                Coordinates are based on the 600 x 520 viewBox:
+                PT. A center: 125, 105
+                PT. B center: 475, 105
+                BAC center:   300, 260
+                PT. C center:  300, 430
+
+                pathLength="100" ensures every line uses the same
+                animation scale even when the physical lengths differ.
+              -->
+              <svg
+                class="network-connections"
+                viewBox="0 0 600 520"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <!-- BAC to PT. A -->
+                <path
+                  class="connection-base"
+                  d="M 236 204 L 125 153"
+                ></path>
+
+                <path
+                  pathLength="100"
+                  class="connection-light connection-light-a"
+                  d="M 236 204 L 125 153"
+                ></path>
+
+                <!-- BAC to PT. B -->
+                <path
+                  class="connection-base"
+                  d="M 364 204 L 475 153"
+                ></path>
+
+                <path
+                  pathLength="100"
+                  class="connection-light connection-light-b"
+                  d="M 364 204 L 475 153"
+                ></path>
+
+                <!-- BAC to PT. C -->
+                <path
+                  class="connection-base"
+                  d="M 300 345 L 300 382"
+                ></path>
+
+                <path
+                  pathLength="100"
+                  class="connection-light connection-light-c"
+                  d="M 300 345 L 300 382"
+                ></path>
+              </svg>
+
+              <!-- PT. A -->
+              <div
+                class="company-node node-a"
+                style="
+                  --animation-delay: 0s;
+                  --border-start: -62;
+                  --border-end: -162;
+                "
+              >
+                <svg
+                  class="node-border-animation"
+                  viewBox="0 0 140 95"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <rect
+                    class="node-border-track"
+                    x="2"
+                    y="2"
+                    width="136"
+                    height="91"
+                    rx="15"
+                    pathLength="100"
+                  ></rect>
+
+                  <rect
+                    class="node-border-light"
+                    x="2"
+                    y="2"
+                    width="136"
+                    height="91"
+                    rx="15"
+                    pathLength="100"
+                  ></rect>
+                </svg>
+
+                <span class="node-number">01</span>
+                <strong>PT. A</strong>
+                <small>Business Unit</small>
+              </div>
+
+              <!-- PT. B -->
+              <div
+                class="company-node node-b"
+                style="
+                  --animation-delay: 0.3s;
+                  --border-start: -62;
+                  --border-end: -162;
+                "
+              >
+                <svg
+                  class="node-border-animation"
+                  viewBox="0 0 140 95"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <rect
+                    class="node-border-track"
+                    x="2"
+                    y="2"
+                    width="136"
+                    height="91"
+                    rx="15"
+                    pathLength="100"
+                  ></rect>
+
+                  <rect
+                    class="node-border-light"
+                    x="2"
+                    y="2"
+                    width="136"
+                    height="91"
+                    rx="15"
+                    pathLength="100"
+                  ></rect>
+                </svg>
+
+                <span class="node-number">02</span>
+                <strong>PT. B</strong>
+                <small>Business Unit</small>
+              </div>
+
+              <!-- PT. C -->
+              <div
+                class="company-node node-c"
+                style="
+                  --animation-delay: 0.6s;
+                  --border-start: -12;
+                  --border-end: -112;
+                "
+              >
+                <svg
+                  class="node-border-animation"
+                  viewBox="0 0 140 95"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <rect
+                    class="node-border-track"
+                    x="2"
+                    y="2"
+                    width="136"
+                    height="91"
+                    rx="15"
+                    pathLength="100"
+                  ></rect>
+
+                  <rect
+                    class="node-border-light"
+                    x="2"
+                    y="2"
+                    width="136"
+                    height="91"
+                    rx="15"
+                    pathLength="100"
+                  ></rect>
+                </svg>
+
+                <span class="node-number">03</span>
+                <strong>PT. C</strong>
+                <small>Business Unit</small>
+              </div>
+
+              <!-- Main BAC node -->
+              <div class="parent-node">
+                <div class="parent-node-glow"></div>
+
+                <span class="parent-icon">
+                  <img
+                    src="assets/logo2.png"
+                    alt="Blessed Alpha Capital logo"
+                    class="parent-logo"
+                  >
+                </span>
+              </div>
+
+            </div>
+
+            <div class="visual-footer">
+              <span>Capital</span>
+              <span>Strategy</span>
+              <span>Growth</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         MARQUEE
+    =================================================== -->
+
+    <section class="marquee-section" aria-label="Company values">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Strategic Capital</span>
+          <i></i>
+          <span>Business Development</span>
+          <i></i>
+          <span>Operational Excellence</span>
+          <i></i>
+          <span>Long-Term Growth</span>
+          <i></i>
+          <span>Strategic Capital</span>
+          <i></i>
+          <span>Business Development</span>
+          <i></i>
+          <span>Operational Excellence</span>
+          <i></i>
+          <span>Long-Term Growth</span>
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         ABOUT
+    =================================================== -->
+
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <div class="section-heading section-heading-split">
+          <div>
+            <span class="section-number">01 / About</span>
+
+            <h2>
+              One vision.
+              <span>Multiple businesses.</span>
+            </h2>
+          </div>
+
+          <div class="heading-description">
+            <p>
+              We bring together companies from different industries under one
+              strategic ecosystem.
+            </p>
+
+            <p>
+              Through capital, operational expertise, and long-term business
+              direction, we help each company grow independently while
+              creating collective value.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-layout">
+
+          <article class="about-feature">
+            <div class="feature-top">
+              <span>Our Purpose</span>
+              <span class="feature-arrow">↗</span>
+            </div>
+
+            <div class="feature-content">
+              <p class="feature-quote">
+                “Building resilient companies through disciplined ownership,
+                strategic collaboration, and sustainable growth.”
+              </p>
+            </div>
+
+            <div class="feature-bottom">
+              <span>Blessed Alpha Capital</span>
+              <span>Est. 2026</span>
+            </div>
+          </article>
+
+          <div class="about-principles">
+
+            <article class="principle-card">
+              <span class="principle-number">01</span>
+
+              <div>
+                <h3>Disciplined Ownership</h3>
+                <p>
+                  We take an active and responsible approach to ownership,
+                  prioritizing sustainable business fundamentals.
+                </p>
+              </div>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">02</span>
+
+              <div>
+                <h3>Strategic Collaboration</h3>
+                <p>
+                  We connect portfolio companies with shared resources,
+                  strategic networks, and market opportunities.
+                </p>
+              </div>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">03</span>
+
+              <div>
+                <h3>Long-Term Perspective</h3>
+                <p>
+                  We build companies with durable value rather than focusing
+                  solely on short-term performance.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         COMPANIES
+    =================================================== -->
+
+    <section class="section companies-section" id="companies">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-number">02 / Our Companies</span>
+
+          <div class="companies-heading">
+            <h2>
+              A focused portfolio built
+              <span>for sustainable growth.</span>
+            </h2>
+
+            <p>
+              Each company operates independently while benefiting from
+              centralized strategy, capital, and business development support.
+            </p>
+          </div>
+        </div>
+
+        <div class="company-grid">
+
+          <article class="company-card company-card-large">
+            <div class="company-card-background">A</div>
+
+            <div class="company-card-top">
+              <span class="company-index">Company 01</span>
+              <span class="company-status">Active</span>
+            </div>
+
+            <div class="company-card-content">
+              <div class="company-icon">A</div>
+
+              <div>
+                <span class="company-category">
+                  Industry / Business Sector
+                </span>
+
+                <h3>PT. A</h3>
+
+                <p>
+                  A portfolio company focused on scalable products,
+                  operational excellence, and sustainable market growth.
+                </p>
+              </div>
+            </div>
+
+            <div class="company-card-footer">
+              <a href="#">
+                View Company
+                <span>↗</span>
+              </a>
+
+              <span>Portfolio Company</span>
+            </div>
+          </article>
+
+          <article class="company-card">
+            <div class="company-card-background">B</div>
+
+            <div class="company-card-top">
+              <span class="company-index">Company 02</span>
+              <span class="company-status">Active</span>
+            </div>
+
+            <div class="company-card-content">
+              <div class="company-icon">B</div>
+
+              <div>
+                <span class="company-category">
+                  Industry / Business Sector
+                </span>
+
+                <h3>PT. B</h3>
+
+                <p>
+                  A growth-oriented company positioned to expand its market
+                  presence and strengthen the wider group ecosystem.
+                </p>
+              </div>
+            </div>
+
+            <div class="company-card-footer">
+              <a href="#">
+                View Company
+                <span>↗</span>
+              </a>
+
+              <span>Portfolio Company</span>
+            </div>
+          </article>
+
+          <article class="company-card">
+            <div class="company-card-background">C</div>
+
+            <div class="company-card-top">
+              <span class="company-index">Company 03</span>
+              <span class="company-status">Active</span>
+            </div>
+
+            <div class="company-card-content">
+              <div class="company-icon">C</div>
+
+              <div>
+                <span class="company-category">
+                  Industry / Business Sector
+                </span>
+
+                <h3>PT. C</h3>
+
+                <p>
+                  A strategic business unit designed to unlock new markets,
+                  partnerships, and long-term value opportunities.
+                </p>
+              </div>
+            </div>
+
+            <div class="company-card-footer">
+              <a href="#">
+                View Company
+                <span>↗</span>
+              </a>
+
+              <span>Portfolio Company</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         APPROACH
+    =================================================== -->
+
+    <section class="section approach-section" id="approach">
+      <div class="container">
+
+        <div class="section-heading section-heading-split">
+          <div>
+            <span class="section-number">03 / Our Approach</span>
+
+            <h2>
+              How we build
+              <span>long-term value.</span>
+            </h2>
+          </div>
+
+          <div class="heading-description">
+            <p>
+              Our role goes beyond providing capital. We combine strategic
+              direction, operating support, and cross-company collaboration.
+            </p>
+          </div>
+        </div>
+
+        <div class="approach-list">
+
+          <article class="approach-item">
+            <div class="approach-index">01</div>
+
+            <div class="approach-title">
+              <span class="approach-icon">◫</span>
+              <h3>Strategic Capital</h3>
+            </div>
+
+            <p>
+              Providing disciplined capital aligned with each company’s
+              priorities and long-term objectives.
+            </p>
+
+            <span class="approach-arrow">↗</span>
+          </article>
+
+          <article class="approach-item">
+            <div class="approach-index">02</div>
+
+            <div class="approach-title">
+              <span class="approach-icon">⌁</span>
+              <h3>Business Development</h3>
+            </div>
+
+            <p>
+              Creating partnerships, expanding networks, and unlocking new
+              market opportunities across the group.
+            </p>
+
+            <span class="approach-arrow">↗</span>
+          </article>
+
+          <article class="approach-item">
+            <div class="approach-index">03</div>
+
+            <div class="approach-title">
+              <span class="approach-icon">◇</span>
+              <h3>Operational Excellence</h3>
+            </div>
+
+            <p>
+              Strengthening management systems, internal processes, and
+              organizational performance.
+            </p>
+
+            <span class="approach-arrow">↗</span>
+          </article>
+
+          <article class="approach-item">
+            <div class="approach-index">04</div>
+
+            <div class="approach-title">
+              <span class="approach-icon">↗</span>
+              <h3>Sustainable Growth</h3>
+            </div>
+
+            <p>
+              Developing resilient companies capable of creating lasting
+              economic and strategic value.
+            </p>
+
+            <span class="approach-arrow">↗</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         STATISTICS
+    =================================================== -->
+
+    <section class="statistics-section">
+      <div class="container">
+
+        <div class="statistics-grid">
+
+          <article class="statistic-item">
+            <span class="statistic-label">Portfolio</span>
+            <strong>03</strong>
+            <p>Active portfolio companies</p>
+          </article>
+
+          <article class="statistic-item">
+            <span class="statistic-label">Strategy</span>
+            <strong>01</strong>
+            <p>Integrated group vision</p>
+          </article>
+
+          <article class="statistic-item">
+            <span class="statistic-label">Commitment</span>
+            <strong>100%</strong>
+            <p>Long-term business focus</p>
+          </article>
+
+          <article class="statistic-item">
+            <span class="statistic-label">Potential</span>
+            <strong>∞</strong>
+            <p>Opportunities for growth</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         CTA
+    =================================================== -->
+
+    <section class="cta-section" id="contact">
+      <div class="cta-grid" aria-hidden="true"></div>
+
+      <div class="container cta-container">
+        <div class="cta-label">
+          <span class="eyebrow-dot"></span>
+          Strategic Partnerships
+        </div>
+
+        <h2>
+          Let’s build long-term
+          <span>value together.</span>
+        </h2>
+
+        <p>
+          Connect with Blessed Alpha Capital to explore partnerships,
+          investment opportunities, and strategic business collaboration.
+        </p>
+
+        <a
+          href="mailto:hello@blessedalphacapital.com"
+          class="button button-light"
+        >
+          Contact Blessed Alpha Capital
+          <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================================================
+       FOOTER
+  =================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="brand-mark">
+              <img
+                src="assets/logo2.png"
+                alt="Blessed Alpha Capital logo"
+                class="brand-logo"
+              >
+            </span>
+
+            <span class="brand-copy">
+              <strong>Blessed Alpha Capital</strong>
+            </span>
+          </a>
+
+          <p>
+            A strategic holding company focused on building resilient
+            businesses and creating sustainable long-term value.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <a href="#about">About Us</a>
+          <a href="#approach">Our Approach</a>
+          <a href="#companies">Portfolio</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Portfolio</h3>
+          <a href="#">PT. A</a>
+          <a href="#">PT. B</a>
+          <a href="#">PT. C</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <a href="mailto:hello@blessedalphacapital.com">Email</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Partnership Inquiry</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Blessed Alpha Capital. All rights reserved.</p>
+
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

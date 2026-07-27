@@ -1072,7 +1072,7 @@ ul {
   bottom: -120px;
   color: rgba(229, 232, 237, 0.025);
   font-family: var(--font-heading);
-  font-size: 17rem;
+  font-size: 20rem;
   font-weight: 700;
   line-height: 1;
   transition:
@@ -1137,8 +1137,8 @@ ul {
   flex: 0 0 auto;
   place-items: center;
 
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
 
   padding: 14px;
 

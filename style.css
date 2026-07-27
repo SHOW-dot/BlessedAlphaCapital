@@ -1069,7 +1069,7 @@ ul {
 .company-card-background {
   position: absolute;
   right: -30px;
-  bottom: -120px;
+  bottom: -100px;
   color: rgba(229, 232, 237, 0.025);
   font-family: var(--font-heading);
   font-size: 20rem;
